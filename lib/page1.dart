@@ -106,7 +106,9 @@ class _Page1State extends State<Page1> {
                                         color: Color(0xFFFFFFFF)),
                                   ],
                                 ),
-                                onPressed: () {}),
+                                onPressed: () {
+                                  Navigator.pushNamed(context, '/twthing');
+                                }),
                           ),
                         ]),
                       ),
@@ -204,79 +206,32 @@ class _Page1State extends State<Page1> {
                             child: Column(
                               children: [
                                 UiHelper.verticalSpace(vspace: Spacing.small),
-                                Image.asset(
-                                  'images/mayor.jpg',
-                                  width: UiHelper.displayWidth(context) * 0.088,
-                                  height:
-                                      UiHelper.displayHeight(context) * 0.048,
-                                  fit: BoxFit.fill,
+                                Container(
+                                  margin: const EdgeInsets.only(top: 3.5),
+                                  child: Image.asset(
+                                    'images/parichaya.jpg',
+                                    width: UiHelper.displayWidth(context) * 0.1,
+                                    height:
+                                        UiHelper.displayHeight(context) * 0.033,
+                                    fit: BoxFit.fill,
+                                  ),
                                 ),
                                 UiHelper.verticalSpace(vspace: Spacing.small),
                                 Text(
-                                  "नमस्ते मेयर",
+                                  "नगरपालिका परिचय",
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
                                     fontFamily: "Roboto-Regular",
                                     fontWeight: FontWeight.w500,
                                     color: Color(0xFF7C7C7C),
                                     fontSize:
-                                        UiHelper.displayWidth(context) * 0.029,
+                                        UiHelper.displayWidth(context) * 0.027,
                                   ),
                                 ),
                               ],
                             ),
                             onPressed: () {
-                              showDialog(
-                                  context: context,
-                                  builder: (BuildContext context) {
-                                    return AlertDialog(
-                                        title: Text(
-                                            "Please Login! कृपया लगइन गर्नुहोस्!"),
-                                        insetPadding: const EdgeInsets.all(60),
-                                        actions: <Widget>[
-                                          Container(
-                                            margin: const EdgeInsets.only(
-                                                left: 30, bottom: 3),
-                                            child: Row(
-                                              children: [
-                                                ElevatedButton(
-                                                  style:
-                                                      ElevatedButton.styleFrom(
-                                                    backgroundColor:
-                                                        Color(0xFF004BA4),
-                                                  ),
-                                                  child: Text("Okay"),
-                                                  onPressed: () {
-                                                    // Perform logout here
-                                                    Navigator.pushNamed(
-                                                        context, '/twthing');
-                                                  },
-                                                ),
-                                                UiHelper.horizontaSpace(
-                                                    hspace: Spacing.xxlarge),
-                                                UiHelper.horizontaSpace(
-                                                    hspace: Spacing.large),
-                                                Align(
-                                                    alignment:
-                                                        Alignment.bottomRight,
-                                                    widthFactor: 1.2,
-                                                    child: ElevatedButton(
-                                                      style: ElevatedButton
-                                                          .styleFrom(
-                                                        backgroundColor:
-                                                            Color(0xFF004BA4),
-                                                      ),
-                                                      child: Text("Cancel"),
-                                                      onPressed: () {
-                                                        Navigator.of(context)
-                                                            .pop();
-                                                      },
-                                                    ))
-                                              ],
-                                            ),
-                                          )
-                                        ]);
-                                  });
+                              Navigator.pushNamed(context, '/thirteenth');
                             },
                           ),
                         ),
@@ -515,32 +470,79 @@ class _Page1State extends State<Page1> {
                             child: Column(
                               children: [
                                 UiHelper.verticalSpace(vspace: Spacing.small),
-                                Container(
-                                  margin: const EdgeInsets.only(top: 3.5),
-                                  child: Image.asset(
-                                    'images/parichaya.jpg',
-                                    width: UiHelper.displayWidth(context) * 0.1,
-                                    height:
-                                        UiHelper.displayHeight(context) * 0.033,
-                                    fit: BoxFit.fill,
-                                  ),
+                                Image.asset(
+                                  'images/mayor.jpg',
+                                  width: UiHelper.displayWidth(context) * 0.088,
+                                  height:
+                                      UiHelper.displayHeight(context) * 0.048,
+                                  fit: BoxFit.fill,
                                 ),
                                 UiHelper.verticalSpace(vspace: Spacing.small),
                                 Text(
-                                  "गाउँपालिका परिचय",
+                                  "नमस्ते मेयर",
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
                                     fontFamily: "Roboto-Regular",
                                     fontWeight: FontWeight.w500,
                                     color: Color(0xFF7C7C7C),
                                     fontSize:
-                                        UiHelper.displayWidth(context) * 0.027,
+                                        UiHelper.displayWidth(context) * 0.029,
                                   ),
                                 ),
                               ],
                             ),
                             onPressed: () {
-                              Navigator.pushNamed(context, '/thirteenth');
+                              showDialog(
+                                  context: context,
+                                  builder: (BuildContext context) {
+                                    return AlertDialog(
+                                        title: Text(
+                                            "Please Login! कृपया लगइन गर्नुहोस्!"),
+                                        insetPadding: const EdgeInsets.all(60),
+                                        actions: <Widget>[
+                                          Container(
+                                            margin: const EdgeInsets.only(
+                                                left: 30, bottom: 3),
+                                            child: Row(
+                                              children: [
+                                                ElevatedButton(
+                                                  style:
+                                                      ElevatedButton.styleFrom(
+                                                    backgroundColor:
+                                                        Color(0xFF004BA4),
+                                                  ),
+                                                  child: Text("Okay"),
+                                                  onPressed: () {
+                                                    // Perform logout here
+                                                    Navigator.pushNamed(
+                                                        context, '/twthing');
+                                                  },
+                                                ),
+                                                UiHelper.horizontaSpace(
+                                                    hspace: Spacing.xxlarge),
+                                                UiHelper.horizontaSpace(
+                                                    hspace: Spacing.large),
+                                                Align(
+                                                    alignment:
+                                                        Alignment.bottomRight,
+                                                    widthFactor: 1.2,
+                                                    child: ElevatedButton(
+                                                      style: ElevatedButton
+                                                          .styleFrom(
+                                                        backgroundColor:
+                                                            Color(0xFF004BA4),
+                                                      ),
+                                                      child: Text("Cancel"),
+                                                      onPressed: () {
+                                                        Navigator.of(context)
+                                                            .pop();
+                                                      },
+                                                    ))
+                                              ],
+                                            ),
+                                          )
+                                        ]);
+                                  });
                             },
                           ),
                         ),
@@ -765,7 +767,7 @@ class _Page1State extends State<Page1> {
                                   margin:
                                       const EdgeInsets.only(left: 16, top: 26),
                                   child: Text(
-                                    "ब्याँस संघीय लोकतान्त्रिक गणतन्त्र नेपालको राजधानी \nमात्र नभई देशको मध्य भागमा अवस्थित नेपालका १४ \nप्रशासनिक अञ्चलहरूद्वारा गठन गरिएका पाँच विकास \nक्षेत्रहरूमध्ये मध्य क्षेत्र (मध्यमञ्चल) को सदरमुकाम पनि हो। \nमध्य क्षेत्रमा बागमती, नारायणी र जनकपुर गरी तीन अञ्चल \nरहेका छन् । ब्याँस बागमती अञ्चलमा पर्दछ । \nनेपाल पर्यटनको प्रवेशद्वारका रूपमा ब्याँस देशको \nअर्थतन्त्रको केन्द्रविन्दु हो।",
+                                    "गोकर्णेश्वर संघीय लोकतान्त्रिक गणतन्त्र नेपालको राजधानी \nमात्र नभई देशको मध्य भागमा अवस्थित नेपालका १४ \nप्रशासनिक अञ्चलहरूद्वारा गठन गरिएका पाँच विकास \nक्षेत्रहरूमध्ये मध्य क्षेत्र (मध्यमञ्चल) को सदरमुकाम पनि हो। \nमध्य क्षेत्रमा बागमती, नारायणी र जनकपुर गरी तीन अञ्चल \nरहेका छन् । गोकर्णेश्वर बागमती अञ्चलमा पर्दछ । \nनेपाल पर्यटनको प्रवेशद्वारका रूपमा गोकर्णेश्वर देशको \nअर्थतन्त्रको केन्द्रविन्दु हो।",
                                     style: TextStyle(
                                       fontFamily: "SignikaNegative-Bold",
                                       fontWeight: FontWeight.w200,
@@ -814,7 +816,7 @@ class _Page1State extends State<Page1> {
                                   margin:
                                       const EdgeInsets.only(left: 16, top: 26),
                                   child: Text(
-                                    "ब्याँस संघीय लोकतान्त्रिक गणतन्त्र नेपालको राजधानी \nमात्र नभई देशको मध्य भागमा अवस्थित नेपालका १४ \nप्रशासनिक अञ्चलहरूद्वारा गठन गरिएका पाँच विकास \nक्षेत्रहरूमध्ये मध्य क्षेत्र (मध्यमञ्चल) को सदरमुकाम पनि हो। \nमध्य क्षेत्रमा बागमती, नारायणी र जनकपुर गरी तीन अञ्चल \nरहेका छन् । ब्याँस बागमती अञ्चलमा पर्दछ । \nनेपाल पर्यटनको प्रवेशद्वारका रूपमा ब्याँस देशको \nअर्थतन्त्रको केन्द्रविन्दु हो।",
+                                    "गोकर्णेश्वर संघीय लोकतान्त्रिक गणतन्त्र नेपालको राजधानी \nमात्र नभई देशको मध्य भागमा अवस्थित नेपालका १४ \nप्रशासनिक अञ्चलहरूद्वारा गठन गरिएका पाँच विकास \nक्षेत्रहरूमध्ये मध्य क्षेत्र (मध्यमञ्चल) को सदरमुकाम पनि हो। \nमध्य क्षेत्रमा बागमती, नारायणी र जनकपुर गरी तीन अञ्चल \nरहेका छन् । गोकर्णेश्वर बागमती अञ्चलमा पर्दछ । \nनेपाल पर्यटनको प्रवेशद्वारका रूपमा गोकर्णेश्वर देशको \nअर्थतन्त्रको केन्द्रविन्दु हो।",
                                     style: TextStyle(
                                       fontFamily: "SignikaNegative-Bold",
                                       fontWeight: FontWeight.w200,

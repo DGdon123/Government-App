@@ -58,10 +58,10 @@ class _Page2State extends State<Page2> {
                               ),
                             ),
                             Container(
-                                margin: const EdgeInsets.only(
-                                    left: 15, bottom: 100),
+                                margin:
+                                    const EdgeInsets.only(left: 15, bottom: 40),
                                 child: Text(
-                                  "ब्याँस संघीय लोकतान्त्रिक \nगणतन्त्र नेपालको राजधानी मात्र \nनभई देशको मध्य भागमा अवस्थित \nनेपालका १४ प्रशासनिक \nअञ्चलहरूद्वारा गठन गरिएका \nपाँच विकास",
+                                  "गोकर्णेश्वर संघीय लोकतान्त्रिक \nगणतन्त्र नेपालको राजधानी मात्र \nनभई देशको मध्य भागमा अवस्थित \nनेपालका १४ प्रशासनिक \nअञ्चलहरूद्वारा गठन गरिएका पाँच \nविकास क्षेत्रहरूमध्ये मध्य क्षेत्र \n(मध्यमञ्चल) को सदरमुकाम पनि हो। \nमध्य क्षेत्रमा बागमती, नारायणी र \nजनकपुर गरी तीन अञ्चल रहेका \nछन्।",
                                   style: TextStyle(
                                     fontFamily: "SignikaNegative-Bold",
                                     fontWeight: FontWeight.w200,
@@ -560,7 +560,7 @@ class _Page2State extends State<Page2> {
                       ),
                       UiHelper.verticalSpace(vspace: Spacing.medium),
                       Text(
-                        "- ब्याँस गाऊँपालिका",
+                        "- गोकर्णेश्वर नगरपालिका",
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           fontFamily: "RussoOne",

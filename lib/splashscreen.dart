@@ -43,9 +43,9 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                   Container(
-                    margin: const EdgeInsets.only(top: 36),
+                    margin: const EdgeInsets.only(top: 39),
                     child: Text(
-                      "ब्याँस",
+                      "गोकर्णेश्वर",
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontFamily: "ZenKakuGothicAntique",
@@ -57,9 +57,9 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                   Align(
                     alignment: Alignment.bottomCenter,
-                    heightFactor: 0.69,
+                    heightFactor: 0.71,
                     child: Text(
-                      "गाऊँपालिका",
+                      "नगरपालिका",
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontFamily: "ZenKakuGothicAntique",

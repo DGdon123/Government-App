@@ -177,7 +177,7 @@ class _GraphScreenState extends State<GraphScreen> {
                     UiHelper.verticalSpace(vspace: Spacing.medium),
                     Container(
                       child: Text(
-                        "ब्याँस गाऊँपालिका",
+                        "गोकर्णेश्वर नगरपालिका",
                         textAlign: TextAlign.start,
                         style: TextStyle(
                             fontFamily: "KumbhSans",
@@ -512,7 +512,7 @@ class _GraphScreenState extends State<GraphScreen> {
                   color: Color(0xFF004BA4),
                   height: UiHelper.displayHeight(context) * 0.1,
                   child: Text(
-                    "ब्यास गाउँपालिकाका तथन्याकहरु\n (०७५/०७६ को डिजिटल सर्बेक्स्यान्ड अनुसार)",
+                    "गोकर्णेश्वर नगरपालिकाका तथन्याकहरु\n (०७५/०७६ को डिजिटल सर्बेक्स्यान्ड अनुसार)",
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontFamily: "SignikaNegative-Bold",

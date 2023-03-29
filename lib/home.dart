@@ -64,7 +64,7 @@ class _SeventhScreenState extends State<SeventhScreen> {
               color: Color.fromARGB(255, 0, 0, 0), //change color on your need
             ),
             title: Text(
-              "ब्याँस गाऊँपालिका",
+              "गोकर्णेश्वर नगरपालिका",
               textAlign: TextAlign.left,
               style: TextStyle(
                   height: 1,
@@ -175,7 +175,9 @@ class _SeventhScreenState extends State<SeventhScreen> {
                                             color: Color(0xFFFFFFFF)),
                                       ],
                                     ),
-                                    onPressed: () {}),
+                                    onPressed: () {
+                                      Navigator.pushNamed(context, '/twthing');
+                                    }),
                               ),
                             ]),
                           ),

@@ -46,15 +46,14 @@ class _Page4State extends State<Page4> {
         unselectedLabelColor: Color(0xFFADECFF),
         indicatorColor: Color(0xFF84E2F4),
         tabs: [
-          Tab(text: 'गाउँपालिका'),
-          Tab(text: 'वडा'),
+          Tab(text: 'नगरपालिका'),
         ],
       );
 
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 2,
+      length: 1,
       child: Scaffold(
           backgroundColor: Colors.transparent,
           appBar: AppBar(
@@ -70,7 +69,6 @@ class _Page4State extends State<Page4> {
           ),
           body: TabBarView(children: [
             Page5(),
-            Page6(),
           ])),
     );
   }
