@@ -25,6 +25,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      
         body: Container(
             color: Colors.transparent,
             child: Column(
@@ -45,7 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   Container(
                     margin: const EdgeInsets.only(top: 39),
                     child: Text(
-                      "गोकर्णेश्वर",
+                      "डिजिटल",
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontFamily: "ZenKakuGothicAntique",
@@ -57,9 +58,9 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                   Align(
                     alignment: Alignment.bottomCenter,
-                    heightFactor: 0.71,
+                    heightFactor: 0.72,
                     child: Text(
-                      "नगरपालिका",
+                      "पालिका",
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontFamily: "ZenKakuGothicAntique",

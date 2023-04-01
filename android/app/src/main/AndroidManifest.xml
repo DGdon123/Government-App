@@ -2,7 +2,7 @@
     package="com.example.prabidhi">
     <uses-permission android:name="android.permission.INTERNET"/>
    <application
-        android:label="Byas Gaunpalika | ब्याँस गाऊँपालिका | Softech Foundation"
+        android:label="Digital Palika | Softech Foundation"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
