@@ -32,8 +32,8 @@ class Introduction {
     required this.title,
     required this.description,
     required this.status,
-    required this.order,
-    required this.deletedAt,
+    this.order = 0,
+    this.deletedAt = 0,
     required this.createdAt,
     required this.updatedAt,
   });
@@ -42,8 +42,8 @@ class Introduction {
   String title;
   String description;
   int status;
-  int order;
-  dynamic deletedAt;
+  int? order;
+  dynamic? deletedAt;
   DateTime createdAt;
   DateTime updatedAt;
 

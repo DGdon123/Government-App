@@ -525,7 +525,7 @@ class _Page1State extends State<Page1> {
                                                 Align(
                                                     alignment:
                                                         Alignment.bottomRight,
-                                                    widthFactor: 1.2,
+                                                    widthFactor: 1,
                                                     child: ElevatedButton(
                                                       style: ElevatedButton
                                                           .styleFrom(

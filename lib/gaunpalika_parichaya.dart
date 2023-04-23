@@ -75,7 +75,7 @@ class _TweleventhRouteState extends State<TweleventhRoute> {
           },
         ),
         backgroundColor: Color(0xFF004BA4),
-        title: const Text('गाउँपालिका परिचय',
+        title: const Text('नगरपालिका परिचय',
             style: TextStyle(
               color: Color(0xFFFFFFFF),
               fontFamily: 'Roboto Bold',

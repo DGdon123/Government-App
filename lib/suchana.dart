@@ -472,7 +472,55 @@ class FourteenthRouteState extends State<FourteenthRoute> {
                           ],
                         ),
                         onPressed: () {
-                          Navigator.pushNamed(context, '/fourth');
+                          showDialog(
+                              context: context,
+                              builder: (BuildContext context) {
+                                return AlertDialog(
+                                    title: Text(
+                                        "Please Login! कृपया लगइन गर्नुहोस्!"),
+                                    insetPadding: const EdgeInsets.all(60),
+                                    actions: <Widget>[
+                                      Container(
+                                        margin: const EdgeInsets.only(
+                                            left: 30, bottom: 3),
+                                        child: Row(
+                                          children: [
+                                            ElevatedButton(
+                                              style: ElevatedButton.styleFrom(
+                                                backgroundColor:
+                                                    Color(0xFF004BA4),
+                                              ),
+                                              child: Text("Okay"),
+                                              onPressed: () {
+                                                // Perform logout here
+                                                Navigator.pushNamed(
+                                                    context, '/twthing');
+                                              },
+                                            ),
+                                            UiHelper.horizontaSpace(
+                                                hspace: Spacing.xxlarge),
+                                            UiHelper.horizontaSpace(
+                                                hspace: Spacing.large),
+                                            Align(
+                                                alignment:
+                                                    Alignment.bottomRight,
+                                                widthFactor: 1,
+                                                child: ElevatedButton(
+                                                  style:
+                                                      ElevatedButton.styleFrom(
+                                                    backgroundColor:
+                                                        Color(0xFF004BA4),
+                                                  ),
+                                                  child: Text("Cancel"),
+                                                  onPressed: () {
+                                                    Navigator.of(context).pop();
+                                                  },
+                                                ))
+                                          ],
+                                        ),
+                                      )
+                                    ]);
+                              });
                         },
                       ),
                     ),

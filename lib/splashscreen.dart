@@ -25,7 +25,6 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
         body: Container(
             color: Colors.transparent,
             child: Column(
@@ -71,7 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                   Container(
-                    margin: const EdgeInsets.only(top: 200),
+                    margin: const EdgeInsets.only(top: 160),
                     child: Text(
                       "Powered by:",
                       textAlign: TextAlign.center,
